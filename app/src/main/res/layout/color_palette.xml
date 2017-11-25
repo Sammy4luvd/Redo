@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/color_palette_display"
+                  android:layout_width="25dp"
+                  android:layout_height="25dp"
+                  android:background="@drawable/circle"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/selected_color_indicator"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_done"/>
+
+    </LinearLayout>
+
+</merge>

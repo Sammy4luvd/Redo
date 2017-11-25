@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.AddNewCategoryActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:navigationIcon="@drawable/ic_close"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="@string/add_new"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbarlayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="9dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/add_new_category_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="@string/title_hint_text"
+                        android:textSize="17sp"/>
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/add_new_category_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:hint="@string/location_hint_text"
+                        android:textSize="17sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:text="@string/start_time"
+                        android:textColor="@color/regular_black"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/add_new_category_start_time_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pickled_bluewood"
+                        android:textStyle="normal"
+                        tools:text="Fri. Nov 3, 2017, 12:00pm"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:text="@string/category"/>
+
+                    <redo.tribaxy.com.customclasses.PresetRadioCircleGroup
+                        android:id="@+id/preset_circle_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal"
+                        android:weightSum="6"
+                        app:presetRadioCheckedId="@id/preset_circle_button_green">
+
+                        <redo.tribaxy.com.customclasses.PresetRadioCircleButton
+                            android:id="@+id/preset_circle_button_red"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            app:presetRadioCircleColor="@color/red_500"/>
+
+                        <redo.tribaxy.com.customclasses.PresetRadioCircleButton
+                            android:id="@+id/preset_circle_button_yellow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            app:presetRadioCircleColor="@color/yellow_500"/>
+
+                        <redo.tribaxy.com.customclasses.PresetRadioCircleButton
+                            android:id="@+id/preset_circle_button_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            app:presetRadioCircleColor="@color/grey_500"/>
+
+                        <redo.tribaxy.com.customclasses.PresetRadioCircleButton
+                            android:id="@+id/preset_circle_button_blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            app:presetRadioCircleColor="@color/blue_500"/>
+
+                        <redo.tribaxy.com.customclasses.PresetRadioCircleButton
+                            android:id="@+id/preset_circle_button_green"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            app:presetRadioCircleColor="@color/green_500"/>
+
+                        <redo.tribaxy.com.customclasses.PresetRadioCircleButton
+                            android:id="@+id/preset_circle_button_pink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            app:presetRadioCircleColor="@color/pink_500"/>
+
+
+                    </redo.tribaxy.com.customclasses.PresetRadioCircleGroup>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/recur"
+                        android:textColor="@color/regular_black"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/every_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/category_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/pickled_bluewood"
+                        android:textSize="19sp"
+                        tools:text="8"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:entries="@array/recur_selections"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/pickled_bluewood"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/preset_square_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:orientation="horizontal"
+                    android:padding="9dp"
+                    android:visibility="visible"
+                    android:weightSum="7">
+
+                    <redo.tribaxy.com.customclasses.PresetRadioSquareButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:presetRadioSquareButtonText="@string/sunday_short"
+                        app:presetRadioSquareSetChecked="true"/>
+
+                    <redo.tribaxy.com.customclasses.PresetRadioSquareButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:presetRadioSquareButtonText="@string/monday_short"/>
+
+                    <redo.tribaxy.com.customclasses.PresetRadioSquareButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:presetRadioSquareButtonText="@string/tuesday_short"/>
+
+                    <redo.tribaxy.com.customclasses.PresetRadioSquareButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:presetRadioSquareButtonText="@string/wednesday_short"/>
+
+                    <redo.tribaxy.com.customclasses.PresetRadioSquareButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:presetRadioSquareButtonText="@string/thursday_short"
+                        app:presetRadioSquareSetChecked="true"/>
+
+                    <redo.tribaxy.com.customclasses.PresetRadioSquareButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:presetRadioSquareButtonText="@string/friday_short"/>
+
+                    <redo.tribaxy.com.customclasses.PresetRadioSquareButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:presetRadioSquareButtonText="@string/saturday_short"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginStart="9dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pickled_bluewood"
+                        tools:text="@string/next_occurrence_alert"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:textColor="#FF000000"
+                        tools:text="End date"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/choose_end_date"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pickled_bluewood"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_alarms_black"/>
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:entries="@array/reminder_selections"
+                            android:textColor="@color/pickled_bluewood"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_a_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:elevation="3dp"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_arrow_forward"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

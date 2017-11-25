@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Home Card Specifications-->
+    <dimen name="home_card_height">160dp</dimen>
+    <dimen name="default_card_shadow">5dp</dimen>
+    <dimen name="home_card_title_font_size">25sp</dimen>
+    <dimen name="home_card_item_count_font_size">17sp</dimen>
+    <dimen name="home_card_item_padding">20dp</dimen>
+    <dimen name="category_item_height">80dp</dimen>
+
+
+    <!--bottom sheet dialog specifications-->
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+</resources>

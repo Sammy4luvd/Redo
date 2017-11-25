@@ -1,3 +1,81 @@
 <resources>
     <string name="app_name">Redo</string>
+    <string name="no_redo_category_yet_text">Redo is empty!</string>
+    <string name="location_hint_text">Location</string>
+    <string name="title_hint_text">Title</string>
+    <string name="modify_category_preference">Modify Category</string>
+    <string name="delete_category">Delete Category</string>
+    <string name="date_picker_title">End date</string>
+    <string name="time_picker_title">Start time</string>
+    <string name="delete">Delete</string>
+    <string name="exit_alert">Press once again to exit!</string>
+    <string name="default_category_title_if_none">Category Unknown</string>
+    <string name="delete_success_for_category">\t is taken care of!</string>
+    <string name="undo_text">Reverse</string>
+    <string name="start_time">Start time</string>
+    <string name="choose_a_start_time">Pick a start time</string>
+    <string name="choose_end_date">Pick an end date</string>
+    <string name="category">Category</string>
+    <string name="recur">Recur</string>
+    <string name="every_text">Every</string>
+    <string name="add_new">Add new</string>
+
+    <!--recur selection strings-->
+
+    <string name="next_occurrence_alert">Next occurrence will be on Fri. Nov 3, 2017, 12:00pm</string>
+
+    <string name="hours">hours</string>
+    <string name="days">days</string>
+    <string name="weeks">weeks</string>
+    <string name="months">months</string>
+    <string name="years">years</string>
+
+
+    <!--handling plurals for item count-->
+    <plurals name="item_count_plurals">
+        <item quantity="zero">No Items</item>
+        <item quantity="one">%1$s Item</item>
+        <item quantity="other">%1$s Items</item>
+    </plurals>
+
+    <array name="recur_selections">
+        <item>@string/hours</item>
+        <item>@string/days</item>
+        <item>@string/weeks</item>
+        <item>@string/months</item>
+        <item>@string/years</item>
+    </array>
+
+    <!--reminder selections-->
+
+    <string name="no_reminder">No reminder</string>
+    <string name="ten_minutes_before">10 minutes before</string>
+    <string name="twenty_minutes_before">20 minutes before</string>
+    <string name="thirty_minutes_before">30 minutes before</string>
+    <string name="forty_five_minutes_before">45 minutes before</string>
+    <string name="one_hour_before">1 hour before</string>
+    <string name="two_hours_before">2 hours before</string>
+    <string name="more">more</string>
+
+
+    <array name="reminder_selections">
+        <item>@string/no_reminder</item>
+        <item>@string/ten_minutes_before</item>
+        <item>@string/twenty_minutes_before</item>
+        <item>@string/thirty_minutes_before</item>
+        <item>@string/forty_five_minutes_before</item>
+        <item>@string/one_hour_before</item>
+        <item>@string/two_hours_before</item>
+    </array>
+
+    <!--week day selections-->
+    <string name="sunday_short">S</string>
+    <string name="monday_short">M</string>
+    <string name="tuesday_short">T</string>
+    <string name="wednesday_short">W</string>
+    <string name="thursday_short">Th</string>
+    <string name="friday_short">F</string>
+    <string name="saturday_short">Sa</string>
+
+
 </resources>

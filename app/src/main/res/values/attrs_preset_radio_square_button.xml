@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PresetRadioSquareButton">
+        <attr name="presetRadioSquareButtonText" format="string"/>
+        <attr name="presetRadioSquareSetChecked" format="boolean"/>
+    </declare-styleable>
+</resources>
